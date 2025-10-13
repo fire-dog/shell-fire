@@ -1,0 +1,16 @@
+[local-rhel8.9-BaseOS]
+name=Local RHEL8.9 BaseOS
+baseurl=http://10.110.84.49/rhel8.9/BaseOS/
+gpgcheck=0
+gpgkey=http://10.110.84.49/rhel8.9/RPM-GPG-KEY-redhat-release
+enabled=1
+
+[local-rhel8.9-AppStream]
+name=Local RHEL8.9 AppStream
+baseurl=http://10.110.84.49/rhel8.9/AppStream/
+gpgcheck=0
+gpgkey=http://10.110.84.49/rhel8.9/RPM-GPG-KEY-redhat-release
+enabled=1
+
+
+

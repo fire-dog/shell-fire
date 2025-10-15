@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# CentOS Stream 9 本地 YUM 仓库同步脚本，同步的是https://mirrors.aliyun.com/centos-vault/7.9.2009，存储位置在/yum目录下。
+# 功能：CentOS Stream 9 本地 YUM 仓库同步脚本，同步的是https://mirrors.aliyun.com/centos-vault/7.9.2009，存储位置在/yum目录下。
 #使用时根据实际情况修改以下3个变量：MIRROR_URL，LOCAL_REPO_DIR，REPO_FILE
-
+#作者：老张
 # 检查 root 权限
 if [ "$(id -u)" -ne 0 ]; then
     echo "错误：请使用 root 用户运行此脚本！"
@@ -101,6 +101,7 @@ echo -e "\n本地YUM源仓库搭建完成！"
 echo -e "同步完成！本地仓库路径: ${LOCAL_REPO_DIR}"
 echo -e "可以通过以下URL访问: http://$(hostname -I | awk '{print $1}')/centos7.9"
 echo -e "本地仓库配置文件: ${REPO_FILE}"
+
 
 
 

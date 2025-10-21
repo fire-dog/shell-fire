@@ -1,8 +1,8 @@
 
 #!/bin/bash
 
-# Automatic Backup Linux System Files
-# Author: Assistant
+# Linux系统自动备份脚本（使用时配合计划任务完成）
+# Author: 老张
 # Date: 2025/10/21
 # Version: 1.0
 
